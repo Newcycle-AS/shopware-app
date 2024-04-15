@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/Framework/App/Manifest/Schema/manifest-2.0.xsd">
+  <meta>
+    <name>TingsReceiptIntegration</name>
+    <label>Tings Receipt Integration</label>
+    <description>This app integrates your store with Tings</description>
+    <author>Tings AS</author>
+    <copyright>(c) Tings AS</copyright>
+    <version>0.0.1</version>
+    <license>MIT</license>
+  </meta>
+  <setup>
+    <!--
+      The URL which will be used for the registration.
+      A verifiable signatures will be provided to this URL, as outlined
+      here:
+    https://developer.shopware.com/docs/guides/plugins/apps/app-base-guide.html#registration-request
+     -->
+    <registrationUrl>https://integration.tings.com/api/shopware/registration</registrationUrl>
+  </setup>
+  <permissions>
+    <read>order</read>
+    <read>order_line_item</read>
+    <read>product</read>
+    <read>order_customer</read>
+  </permissions>
+  <webhooks>
+    <!--
+      TODO: order.placed might be a better event to listen to
+     -->
+    <webhook
+      name="order-created"
+      url="https://integration.tings.com/api/shopware/webhook"
+      event="order.written"
+      onlyLiveVersion="false" />
+  </webhooks>
+  <allowed-hosts>
+    <host>integration.tings.com</host>
+  </allowed-hosts>
+</manifest>
