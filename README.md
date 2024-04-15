@@ -12,4 +12,3 @@
 Default admin credentials [here](https://docs.dockware.io/use-dockware/default-credentials#what-are-the-default-shopware-6-admin-credentials)
 
 App docs: https://developer.shopware.com/docs/guides/plugins/apps/app-base-guide.html
-ub
