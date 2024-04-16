@@ -2,7 +2,7 @@
 <manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/Framework/App/Manifest/Schema/manifest-2.0.xsd">
   <meta>
-    <name>DEV_TingsReceiptIntegration</name>
+    <name>TingsReceiptIntegration</name>
     <label>Tings Receipt Integration</label>
     <description>This app integrates your store with Tings</description>
     <author>Tings AS</author>
@@ -17,7 +17,7 @@
       here:
     https://developer.shopware.com/docs/guides/plugins/apps/app-base-guide.html#registration-request
      -->
-    <registrationUrl>https://dev.integration.tings.com/api/shopware/registration</registrationUrl>
+    <registrationUrl>http://bore.pub:13155/api/shopware/registration</registrationUrl>
     <!--
       Must be replaced with a secret generated from the Shopware store.
       Please see
@@ -33,11 +33,11 @@
   </permissions>
   <webhooks>
     <!--
-      TODO: order.placed might be a better event to listen to
+      THINKABOUT: order.placed might be a better event to listen to
      -->
     <webhook
       name="order-created"
-      url="https://dev.integration.tings.com/api/shopware/webhook"
+      url="http://bore.pub:13155/api/shopware/webhook"
       event="order.written"
       onlyLiveVersion="false" />
   </webhooks>
