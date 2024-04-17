@@ -38,8 +38,7 @@
     <webhook
       name="order-created"
       url="https://dev.integration.tings.com/api/shopware/webhook"
-      event="order.written"
-      onlyLiveVersion="false" />
+      event="order.written" />
   </webhooks>
   <allowed-hosts>
     <host>integration.tings.com</host>
