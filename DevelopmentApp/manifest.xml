@@ -18,12 +18,6 @@
     https://developer.shopware.com/docs/guides/plugins/apps/app-base-guide.html#registration-request
      -->
     <registrationUrl>https://dev.integration.tings.com/api/shopware/registration</registrationUrl>
-    <!--
-      Must be replaced with a secret generated from the Shopware store.
-      Please see
-    https://developer.shopware.com/docs/guides/plugins/apps/app-base-guide.html#registration-request.
-    -->
-    <secret>tings-shopware-secret-replace-me</secret>
   </setup>
   <permissions>
     <read>order</read>
@@ -41,6 +35,6 @@
       event="order.written" />
   </webhooks>
   <allowed-hosts>
-    <host>integration.tings.com</host>
+    <host>dev.integration.tings.com</host>
   </allowed-hosts>
 </manifest>
