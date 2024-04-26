@@ -23,6 +23,7 @@
     <read>order</read>
     <read>order_line_item</read>
     <read>product</read>
+    <read>product_media</read>
     <read>order_customer</read>
   </permissions>
   <webhooks>

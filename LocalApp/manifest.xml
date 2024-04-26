@@ -17,7 +17,7 @@
       here:
     https://developer.shopware.com/docs/guides/plugins/apps/app-base-guide.html#registration-request
      -->
-    <registrationUrl>http://bore.pub:13155/api/shopware/registration</registrationUrl>
+    <registrationUrl>http://bore.pub:23145/api/shopware/registration</registrationUrl>
     <!--
       Must be replaced with a secret generated from the Shopware store.
       Please see
@@ -29,6 +29,7 @@
     <read>order</read>
     <read>order_line_item</read>
     <read>product</read>
+    <read>product_media</read>
     <read>order_customer</read>
   </permissions>
   <webhooks>
@@ -37,7 +38,7 @@
      -->
     <webhook
       name="order-created"
-      url="http://bore.pub:13155/api/shopware/webhook"
+      url="http://bore.pub:23145/api/shopware/webhook"
       event="order.written"
       onlyLiveVersion="false" />
   </webhooks>
