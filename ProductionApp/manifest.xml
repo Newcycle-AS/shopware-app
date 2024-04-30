@@ -25,6 +25,11 @@
     <read>product</read>
     <read>product_media</read>
     <read>order_customer</read>
+    <read>product_price</read>
+    <read>product_manufacturer</read>
+    <read>manufacturer</read>
+    <read>prices</read>
+    <read>currency</read>
   </permissions>
   <webhooks>
     <!--
