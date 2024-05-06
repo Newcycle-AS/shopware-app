@@ -18,6 +18,7 @@
     https://developer.shopware.com/docs/guides/plugins/apps/app-base-guide.html#registration-request
      -->
     <registrationUrl>https://integration.tings.com/api/shopware/registration</registrationUrl>
+    <secret>{ASK_TINGS_FOR_THIS_SECRET}</secret>
   </setup>
   <permissions>
     <read>order</read>
