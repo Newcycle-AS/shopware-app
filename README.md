@@ -2,7 +2,8 @@
 
 ## Development
 
-- Start shopware locally: `docker run --rm -p 80:80 -v $(pwd)/LocalApp:/var/www/html/custom/apps/TingsReceiptIntegration dockware/dev:6.6.0.2`
+- Use `./env-switch.ts` to select the Tings environment you want to work in. E.g. `./env-switch.ts development`.
+- Start shopware locally: `docker run --rm -p 80:80 -v $(pwd):/var/www/html/custom/apps/TingsReceiptIntegration dockware/dev:6.6.0.2`
   This will start shopware and sync the the shopware app in `./LocalApp` with the docker image. You can connect the docker instance with this command `docker exec -it <service_name> sh`, `<service_name>` being whatever `docker ps` returns.
 - Open shopware on [localhost](http://localhost/admin)
 - Either install the app from the [localhost](http://localhost/admin) or from within the docker instance, install the app by running `bin/console app:install --activate TingsReceiptIntegration`
