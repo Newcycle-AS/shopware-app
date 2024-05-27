@@ -17,8 +17,7 @@
       here:
     https://developer.shopware.com/docs/guides/plugins/apps/app-base-guide.html#registration-request
      -->
-    <registrationUrl>https://integration.tings.com/api/shopware/registration</registrationUrl>
-    <secret>{ASK_TINGS_FOR_THIS_SECRET}</secret>
+    <registrationUrl>https://dev.integration.tings.com/api/shopware/registration</registrationUrl>
   </setup>
   <permissions>
     <read>order</read>
@@ -38,10 +37,10 @@
      -->
     <webhook
       name="order-created"
-      url="https://integration.tings.com/api/shopware/webhook"
+      url="https://dev.integration.tings.com/api/shopware/webhook"
       event="order.written" />
   </webhooks>
   <allowed-hosts>
-    <host>integration.tings.com</host>
+    <host>dev.integration.tings.com</host>
   </allowed-hosts>
 </manifest>
